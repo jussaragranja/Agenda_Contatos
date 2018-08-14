@@ -1,0 +1,47 @@
+package br.com.agenda.main;
+
+import java.util.Scanner;
+
+import br.com.agenda.controller.Controller;
+import br.com.agenda.repository.Repository;
+
+public class Main {
+	
+	public static void main(String[] args) {
+	
+		Scanner input = new Scanner(System.in);
+		
+		int input1 = 1;
+		
+		while(input1 !=0) {
+		System.out.println("________AGENDA DE CONTATOS________\n");
+		System.out.println("1 - CADASTRAR CONTATO");
+		System.out.println("2 - LISTAR CONTATOS");
+		System.out.println("3 - ALTERAR CONTATO");
+		System.out.println("4 - DELETAR CONTATO");
+		System.out.println("0 - SAIR");
+		
+		input1 = input.nextInt();
+		
+		switch (input1) {
+		case 1:
+			Repository.add_contact();
+			break;
+		case 2:
+			Repository.read_contact();
+			break;
+		case 3:
+			
+			break;
+		case 4:
+			Scanner in = new Scanner(System.in);
+			System.out.println("Digite o id do contato: ");
+			Controller.delete_contact(String in);
+			break;
+		default:
+			break;
+		}
+		}
+		
+	}
+}
