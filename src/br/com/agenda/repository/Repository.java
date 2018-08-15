@@ -16,40 +16,40 @@ public class Repository {
 	public static void add_contact() {
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("Identificador: ");
+		System.out.print("Identificador: ");
 		String id = input.nextLine();
 		
-		System.out.println("Nome: ");
+		System.out.print("Nome: ");
 		String name = input.nextLine();
 		
-		System.out.println("Profissão: ");
+		System.out.print("Profissão: ");
 		String occupation = input.nextLine();
 		
-		System.out.println("Telefone: ");
+		System.out.print("Telefone: ");
 		String numero = input.nextLine();
 		
-		System.out.println("Tipo: ");
+		System.out.print("Tipo: ");
 		String tipo = input.nextLine();
 		
-		System.out.println("Operadora: ");
+		System.out.print("Operadora: ");
 		String operadora = input.nextLine();
 		
-		System.out.println("Email: ");
+		System.out.print("Email: ");
 		String email = input.nextLine();
 		
-		System.out.println("Descrição: ");
+		System.out.print("Descrição: ");
 		String descricao = input.nextLine();
 		
-		System.out.println("Rua: ");
+		System.out.print("Rua: ");
 		String street = input.nextLine();
 		
-		System.out.println("Bairro: ");
+		System.out.print("Bairro: ");
 		String district = input.nextLine();
 		
-		System.out.println("Cidade: ");
+		System.out.print("Cidade: ");
 		String city = input.nextLine();
 		
-		System.out.println("Estado: ");
+		System.out.print("Estado: ");
 		String state = input.nextLine();
 	
 		Phone phone1 = new Phone(numero, tipo, operadora);
@@ -65,7 +65,7 @@ public class Repository {
 	}
 	
 	public static void delete_contact() {
-		System.out.println("Digite o ID do contato: ");
+		System.out.println("Digite a posição do contato: ");
 		id_delete = new Scanner(System.in);
 		Integer id1 = id_delete.nextInt();
 		controller.delete_contact(id1);

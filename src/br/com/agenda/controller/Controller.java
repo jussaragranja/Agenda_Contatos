@@ -11,10 +11,10 @@ public class Controller {
 	
 	public void add_contact(Contact contact) {
 		list_contact.add(contact);
-		System.out.println("\nCADASTRADO COM SUCESSO!\n");
+		System.out.println("CADASTRO EFETUADO COM SUCESSO!\n");
 	}
 	public void read_contact(){
-		System.out.println("_____AGENDA DE CONTATOS_____");
+		System.out.println("~~~~~~~~~~~~CONTATOS~~~~~~~~~~~~");
 		if (list_contact.size() == 0){
 			System.out.println("\nAGENDA VAZIA!!\n");
 		}

@@ -13,12 +13,13 @@ public class Main {
 		int input1 = 1;
 		
 		while(input1 !=0) {
-		System.out.println("________AGENDA DE CONTATOS________\n");
+		System.out.println("\n________AGENDA DE CONTATOS________\n");
 		System.out.println("1 - CADASTRAR CONTATO");
 		System.out.println("2 - LISTAR CONTATOS");
 		System.out.println("3 - DELETAR CONTATO");
 		System.out.println("4 - ALTERAR CONTATO");
 		System.out.println("0 - SAIR");
+		System.out.print("Escolha uma opção: ");
 		
 		input1 = input.nextInt();
 		
@@ -33,6 +34,11 @@ public class Main {
 			Repository.delete_contact();
 			break;
 		case 4:
+			
+			break;
+		case 0:
+			System.out.println("SAINDO...");
+			System.exit(0);
 			break;
 		default:
 			break;
